@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <script type="text/javascript">
+    var clicked = false;
+
+    function handle_click(clicked) {
+      this.clicked = !this.clicked;
+      var navigaton = document.getElementById('slide_menu');
+      if (this.clicked == false) {
+        document.getElementById('hamburger').innerHTML = '<i class="fas fa-bars"></i>';
+        document.getElementById('side_ham').style.display = "none";
+      } else {
+        document.getElementById('hamburger').innerHTML = '<i class="fas fa-times"></i>';
+        document.getElementById('side_ham').style.display = "block";
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="logo" class="logo">
+      <ul class="nav_items" id="slide_menu">
+        <li><a class="abt">About</a></li>
+        <li><a class="wrk">Works</a></li>
+        <li><a class="con">Contact</a></li>
+      </ul>
+
+      <button class="ham_icon" id="hamburger" onclick="handle_click()"><i class="fas fa-bars"></i></button>
+    </nav>
+  </header>
+
+
+  <div class="main_section">
+    <ul class="nav_slide_items" id="side_ham" style="display:none;">
+      <li><a class="abt">About</a></li>
+      <li><a class="wrk">Works</a></li>
+      <li><a class="con">Contact</a></li>
+    </ul>
+    <main class="container">
+      <section class="discription">
+
+        <div class="image_container">
+          <img class="image" src="photo.jpg" alt="photo" />
+          <h3 class="portfolio">portfolio</h3>
+        </div>
+        <div class="total_text">
+          <div class="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="typewriter">
+            <h2 class="text">Hi,<br> I'm Shreyas.</h2>
+            <br>
+            <div class="content">
+              <p>Trainee at Qburst</p>
+              <p>Electrial engineer turned web developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="hero_content">
+    <master class="container">
+      <div class="hero_text">
+        <h1 class="text_heading">Think</h1>
+        <h3 class="second_heading">Outside the box.</h3>
+        <br>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus id nisl vel sodales. Pellentesque quam est, molestie ac massa in, rhoncus tempus metus. Integer sollicitudin lacus sapien, ac tincidunt arcu dapibus at.
+          Morbi tempor fermentum odio, ut placerat diam iaculis eu. Aliquam erat volutpat. Fusce dapibus diam sem, a mattis eros rhoncus eu. Nullam rhoncus ornare tempus. Aenean a nisl ut nunc lobortis tincidunt ac non enim. Aenean ut faucibus quam,
+          sit amet condimentum orci. Curabitur vestibulum elit a posuere imperdiet. Nunc odio dolor, scelerisque sit amet urna eget, varius interdum mi. Praesent luctus libero sed tempus rhoncus. Praesent id mattis ipsum, quis suscipit sem. Sed
+          finibus, ligula vitae congue finibus, ipsum ex tincidunt massa, vel molestie augue urna in eros. Sed tincidunt tristique massa venenatis placerat. Morbi ac ornare elit.</p>
+      </div>
+      <button class="learn_more" type="button">LEARN MORE</button>
+      <div class="works">
+        <h1>My Works</h1>
+      </div>
+
+      <div class="work_images">
+
+        <div class="zomato">
+          <img src="zomato.jpg" class="zomato_img img" alt="zomato logo">
+          <div class="hover_text" hidden>
+            <a href="https://sreyas1999.github.io/Zomato-webpage-clone/" class="anchor" target="_blank" rel="noopener noreferrer">
+              <h5 class="card-title">ZOMATO CLONE</h5>
+              <p class="card-text">Responsive frontend clone of Zomato</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="tasky">
+          <img src="tasky.jpg" class="tasky_img img" alt="tasky logo">
+          <div id="three" class="hover_text" hidden>
+            <a href="https://github.com/sreyas1999/Tasky" class="anchor" target="_blank" rel="noopener noreferrer">
+              <h5 class="card-title">TASKY APP</h5>
+              <p class="card-text">App to organize tasks in day-to-day life</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="accelerate">
+          <img src="accelerate.jpg" class="accelerate_img img" alt="accelerate logo">
+          <div class="hover_text" hidden>
+            <a href="https://qburstproject.000webhostapp.com/" class="anchor" target="_blank" rel="noopener noreferrer">
+              <h5 class="card-title">ACCELERATE</h5>
+              <p class="card-text">Consists of form validation using php & JS</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="learn_btn">
+        <button class="learn_more" id="learn_btn" type="button">LEARN MORE</button>
+      </div>
+
+
+
+    </master>
+  </div>
+
+  <footer class="main_footer">
+    <div class="first_part">
+      <div class="footer_input">
+        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter a valid email address">
+        <input id="f_ip" type="text">
+        <button class="footer_submit">Submit</button>
+      </div>
+      <div class="fc">
+        <div class="footer_contact">
+          <h1 class="footer_contact_heading">CONTACT US</h1>
+          <img src="fb.svg" alt="fb">
+          <img src="tw.svg" alt="tw">
+          <img src="vimeo.svg" alt="vimeo">
+          <img src="insta.svg" alt="insta">
+          <br>
+          <br>
+          <h3 class="contactno">1 (234) 567-891</h3>
+          <h3 class="contactno">1 (234) 987-654</h3>
+        </div>
+      </div>
+  </footer>
+  <div class="last_div">
+    <p style="  padding-top: 30px;
+      background-color: #1f203a;
+      height: 120px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;" ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='second_part';" contenteditable="false" class="second_part">Sample text. Click to
+      select the
+      text box. Click again or double
+      click to start editing the text.</p>
+    <p class="third_part">Project by <span style="font-size: 20px;">Shreyas S Nair</span></p>
+  </div>
+
+
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -474,15 +474,14 @@ h3 {
   }
 
   .hover_text {
-    height: 257px;
-    transform: translateY(-257px);
+    height: 343px;
+    transform: translateY(-343px);
   }
 
   .work_images {
     flex-direction: row;
-    margin: 0 5%;
+    margin: 0 3%;
     gap: .5%;
-    justify-content: space-between;
   }
 
   .zomato,
